@@ -78,5 +78,10 @@ The flow through the edges connecting the real sources or sinks to the infinite 
 
 <figure>
   <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/max_flow_graph_with_capacities.svg" alt=""/>
-  <figcaption><i>Example of a maximum flow graph and the capacites of each source and sink.</i></figcaption>
+  <figcaption><i>Example of a maximum flow graph and the capacites of each source and sink. The right graph shows the maximum flow allowed through each edge after the normalization.</i></figcaption>
+</figure>
+
+<figure>
+  <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/max_flow_graph_with_flows.svg" alt=""/>
+  <figcaption><i>Flow computed by the max flow algorithm and the rescaling to the original size.</i></figcaption>
 </figure>
