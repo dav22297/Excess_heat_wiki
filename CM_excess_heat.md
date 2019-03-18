@@ -78,8 +78,10 @@ The flow through the edges connecting the real sources or sinks to the infinite 
 
 <figure>
   <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/max_flow_graph_with_capacities.svg" alt=""/>
-  <figcaption><i>Example of a maximum flow graph and the capacites of each source and sink. The right graph shows the maximum flow allowed through each edge after the normalization.</i></figcaption>
+  <figcaption><i>Example of a maximum flow graph and the capacites of each source and sink. The right graph shows the maximum flow allowed through each edge after the normalization. Note that the maximum flow allowed through the edges with infinity symbol is actually capped to 1000 in the implementation.</i></figcaption>
 </figure>
+
+The implementation of the igraph maximum flow function uses the Push-relabel algorithm. This type of algorithm is not cost sensitive and might not always find the shortest way of routing the flow. A cost sensitive algorithm is not available in igraph and the performance would be likely to low to be able to resolve an hourly based flow throughout the year. But because of the prior reduction to a minimum spanning tree the cases in which a non-ideal solution is chosen are very limited and unlikely. The Push-relabel algorithm also has tendency to rout the flow through the least amount of edges. The igraph implementation seems to be deterministic in the order of allocation of the flow if the graphs are at least automorphism, which is important for the hourly based flow calculation since any artificially introduced flow oscillation between edges is undesirable.
 
 <figure>
   <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/max_flow_graph_with_flows.svg" alt=""/>
