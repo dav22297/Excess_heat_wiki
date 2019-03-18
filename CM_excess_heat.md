@@ -46,10 +46,10 @@ Only contains the real sources and sinks as vertices.
 ![](https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/graph.svg "Logo Title Text 1")
 *Example of a graph*
 
-<figure>
+<svg>
   <img src="{https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/graph.svg}" alt="my alt text"/>
   <figcaption>This is my caption text.</figcaption>
-</figure>
+</svg>
 
 
 ##### Correspondence graph
