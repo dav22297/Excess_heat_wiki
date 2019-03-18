@@ -45,7 +45,7 @@ Only contains the real sources and sinks as vertices.
 
 <figure>
   <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/graph.svg" alt=""/>
-  <figcaption><i>Example of a graph. The red vertices represent sources and the blue ones sinks.</i></figcaption>
+  <figcaption>Example of a graph. The red vertices represent sources and the blue ones sinks.</figcaption>
 </figure>
 
 
