@@ -61,7 +61,7 @@ Every sink needs a correspondence id, which indicates, if it is internally conne
 Since igraph does not support multiple sources and sinks in its maximum flow function an auxiliary graph is needed. It introduces an infinite source and sink vertex. Every real source is connected to the infinite source and every real sink is connected to the infinite sink by an edge. Note that if a sink is connected to a correspondence vertex this vertex will be connected rather than the sink itself.
 
 <figure>
-  <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/max_flow_graph.svg" alt="" width: 30%/>
+  <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/max_flow_graph.svg" alt="" width: 10%/>
   <figcaption><i>Example of a maximum flow graph.</i></figcaption>
 </figure>
 
