@@ -43,7 +43,7 @@ The NetworkGraph class describes only one network on the surface but contains 3 
 ##### Graph
 Only contains the real sources and sinks as vertices.
 
-![alt text](https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/graph.svg "Logo Title Text 1")
+![](https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/graph.svg "Logo Title Text 1")
 
 ##### Correspondence graph
 Every sink needs a correspondence id, which indicates, if it is internally connected by an already existing network like in coherent areas. Sinks with the same correspondence id are connected to a new vertex with edges with zero weights. This is crucial for the computation of a minimum spanning tree and the reason the correspondence graph is used for it. This feature is also implemented for sources but not used.
