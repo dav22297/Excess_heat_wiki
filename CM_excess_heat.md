@@ -93,6 +93,11 @@ The implementation of the igraph maximum flow function uses the Push-relabel alg
   <figcaption><i>Flow computed by the max flow algorithm and the rescaling to the original size.</i></figcaption>
 </figure>
 
-#### Sources
+#### Heat sources
 
 The heat sources are taken from the industrial database. Based on their excess heat, Nuts0 ID and industrial sector a load profile covering every hour of the year is created for each site.
+
+#### Heat sinks
+
+Heat sinks are created by a
+
