@@ -92,3 +92,7 @@ The implementation of the igraph maximum flow function uses the Push-relabel alg
   <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/max_flow_graph_with_flows.svg" alt=""/>
   <figcaption><i>Flow computed by the max flow algorithm and the rescaling to the original size.</i></figcaption>
 </figure>
+
+#### Sources
+
+The heat sources are taken from the industrial database. Based on their excess heat, Nuts0 ID and industrial sector a load profile covering every hour of the year is created for each site.
