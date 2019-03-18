@@ -43,12 +43,9 @@ The NetworkGraph class describes only one network on the surface but contains 3 
 ##### Graph
 Only contains the real sources and sinks as vertices.
 
-![](https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/graph.svg "Logo Title Text 1")
-*Example of a graph*
-
 <img>
   <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/graph.svg" alt=""/>
-  <figcaption><i>This is my caption text.</i></figcaption>
+  <figcaption><i>Example of a graph. The red vertices represent sources and the blue ones sinks.</i></figcaption>
 </img>
 
 
