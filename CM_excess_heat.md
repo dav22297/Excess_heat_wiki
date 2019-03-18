@@ -77,6 +77,6 @@ Based on the correspondence graph the minimum spanning tree is computed. The edg
 The flow through the edges connecting the real sources or sinks to the infinite source or sink respectively is capped to the real capacity of each source or sink. For numerical reasons the capacities are normalized so that the largest capacity is 1. The flow through the subset of edges contained in the correspondence graph is limited to 1000 which should, for all intense and purposes offer unrestricted flow. Then the maximum flow from the infinite source to the infinite sink is computed and the flow rescaled to its original size. Since coherent sinks are not directly connected to the infinite sink vertex but by the correspondence vertex the flow through it is limited to the sum of all coherent sinks.
 
 <figure>
-  <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/max_flow_graph_with_capcities.svg" alt=""/>
+  <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/max_flow_graph_with_capacities.svg" alt=""/>
   <figcaption><i>Example of a maximum flow graph and the capacites of each source and sink.</i></figcaption>
 </figure>
