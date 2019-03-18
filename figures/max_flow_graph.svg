@@ -7,8 +7,8 @@
    xmlns="http://www.w3.org/2000/svg"
    id="svg8"
    version="1.1"
-   viewBox="0 0 192.50862 83.621231"
-   height="83.621231mm"
+   viewBox="0 0 192.50862 162.91632"
+   height="162.91632mm"
    width="192.50862mm">
   <defs
      id="defs2" />
@@ -25,7 +25,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-12.518544,-109.55556)"
+     transform="translate(-12.518544,-58.303747)"
      id="layer1">
     <g
        transform="translate(3.7797595,46.721879)"
@@ -42,6 +42,10 @@
          style="fill:none;stroke:#000000;stroke-width:0.41365391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="M 88.376443,65.254677 H 129.74184"
          id="path967-3-6-3-7" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.41365391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 88.376443,21.821015 129.74184,65.254677"
+         id="path967-3-6-3" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.41365391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="M 88.376443,65.254677 129.74184,123.16622"
@@ -68,6 +72,26 @@
          id="path967-3-2-1" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.41365391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 88.376443,21.821015 47.011051,65.254677"
+         id="path967-3-2" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.41365391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 88.376443,21.821015 V 65.254677"
+         id="path967-3-6" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.41365391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 47.011051,123.16622 41.365392,41.3654"
+         id="path967-06" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.41365391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 129.74184,142.81478 88.376443,164.53162"
+         id="path967-6" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.41365391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 88.376443,123.16622 v 41.3654"
+         id="path967-3" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.41365391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 117.33222,123.16622 12.40962,19.64856"
          id="path967" />
       <path
@@ -78,6 +102,12 @@
          style="fill:none;stroke:#000000;stroke-width:0.41365391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 142.15145,123.16622 -12.40961,19.64856"
          id="path967-9" />
+      <circle
+         style="fill:#ff2900;fill-opacity:1;stroke:#000000;stroke-width:0.41976428;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path817"
+         cx="88.376442"
+         cy="21.821016"
+         r="3.926657" />
       <circle
          style="fill:#ff2900;fill-opacity:1;stroke:#000000;stroke-width:0.20988214;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path817-3"
@@ -90,6 +120,12 @@
          cx="88.376442"
          cy="65.254677"
          r="1.9633285" />
+      <circle
+         style="fill:#0062ff;fill-opacity:1;stroke:#000000;stroke-width:0.41976428;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path817-7"
+         cx="88.376442"
+         cy="164.53162"
+         r="3.926657" />
       <circle
          style="fill:#0062ff;fill-opacity:0.99014779;stroke:#000000;stroke-width:0.31482321;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path817-7-5-5-2"
@@ -145,6 +181,26 @@
            id="rect1578"
            style="fill:#0062ff;fill-opacity:0.11822659;stroke:#000000;stroke-width:0.41067117;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:5.83711624px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.21889186"
+         x="57.910324"
+         y="16.016708"
+         id="text1585"><tspan
+           id="tspan1583"
+           x="57.910324"
+           y="16.016708"
+           style="stroke-width:0.21889186">infinite source vertex</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:5.83711624px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.21889186"
+         x="63.30484"
+         y="174.41553"
+         id="text1589"><tspan
+           id="tspan1587"
+           x="63.30484"
+           y="174.41553"
+           style="stroke-width:0.21889186">infinte sink vertex</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:5.83711624px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.21889186"

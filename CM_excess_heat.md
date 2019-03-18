@@ -1,14 +1,3 @@
-figure {
-  float: right;
-  width: 30%;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  border: thin silver solid;
-  margin: 0.5em;
-  padding: 0.5em;
-}
 ## Table of Contents
 
 ## Introduction
@@ -70,6 +59,11 @@ Every sink needs a correspondence id, which indicates, if it is internally conne
 
 ##### Maximum flow graph
 Since igraph does not support multiple sources and sinks in its maximum flow function an auxiliary graph is needed. It introduces an infinite source and sink vertex. Every real source is connected to the infinite source and every real sink is connected to the infinite sink by an edge. Note that if a sink is connected to a correspondence vertex this vertex will be connected rather than the sink itself.
+
+<figure>
+  <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/max_flow_graph.svg" alt=""/>
+  <figcaption><i>Example of a maximum flow graph.</i></figcaption>
+</figure>
 
 ##### Minimum spanning tree computation
 Based on the correspondence graph the minimum spanning tree is computed. The edges connecting the coherent sinks always have the weight 0 so they will always remain part of the minimum spanning tree.
