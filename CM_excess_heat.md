@@ -47,8 +47,8 @@ Only contains the real sources and sinks as vertices.
 *Example of a graph*
 
 <img>
-  <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/graph.svg" alt="my alt text"/>
-  <figcaption>This is my caption text.</figcaption>
+  <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/graph.svg" alt=""/>
+  <figcaption><i>This is my caption text.</i></figcaption>
 </img>
 
 
