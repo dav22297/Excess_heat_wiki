@@ -1,8 +1,12 @@
 ﻿## Table of Contents
+* [Introduction](#introduction)
+* [Inputs and outputs](#inputs-and-outputs)
+* [Method](#method)
 
 ## Introduction
 The use of excess heat for district heating.
 
+## Input and outputs
 
 ## Method
 ### Overview
@@ -38,7 +42,7 @@ If two points are in range of the radius it is stored in an adjacency list. The 
 
 <figure>
   <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/search.svg" alt=""/>
-  <figcaption><i>Example of a fixed radius serach. The red vertices represent sources and the blue ones sinks. The numbers represent the distance between the points. Drawing is not to scale.</i></figcaption>
+  <figcaption><i>Example of a fixed radius search. The red vertices represent sources and the blue ones sinks. The numbers represent the distance between the points. Drawing is not to scale.</i></figcaption>
 </figure>
 
 #### NetworkGraph class
@@ -99,11 +103,11 @@ The heat sources are taken from the industrial database. Based on their excess h
 
 #### Heat sinks
 
-The heat sinks are based on coherent areas with a known heat demand. The coherent areas form a mask for a grid on which equidistial points are placed as entry points. Depending on the selected Nuts2 ID a residential heating profile is assigned to the sinks.
+The heat sinks are based on coherent areas with a known heat demand. The coherent areas form a mask for a grid on which equidistant points are placed as entry points. Depending on the selected Nuts2 ID a residential heating profile is assigned to the sinks.
 
 <figure>
   <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/coherent_aera_entry_points.svg" alt=""/>
-  <figcaption><i>Example of a coherent aera and its generated entry points.</i></figcaption>
+  <figcaption><i>Example of a coherent area and its generated entry points.</i></figcaption>
 </figure>
 
 #### Load profiles
@@ -112,7 +116,7 @@ The mentioned load profiles consist of 8760 points which represent the load for 
 
 #### Computation of costs
 
-Since district heating systems have a large heat capacity a peak in flow does not mean the transmission lines actually need to deliver that short spike of heat instantaneously. Therefore, the required capacities of the transmission lines and heat exchangers are determined by the averaged peak load. Specifically, the numpy convolution function is used to average the flow over the last three hours by convoluting with a constant function. Depending on this value a transmission line from the following table is chosen. 
+Since district heating systems have a large heat capacity a peak in flow does not mean the transmission lines need to deliver that short spike of heat instantaneously. Therefore, the required capacities of the transmission lines and heat exchangers are determined by the averaged peak load. Specifically, the numpy convolution function is used to average the flow over the last three hours by convoluting with a constant function. Depending on this value a transmission line from the following table is chosen. 
 
 *Specific costs of transmission lines used*
 
@@ -143,16 +147,16 @@ C<sub>HSink</sub>(P) = P<sub>peak</sub> * 265,000€/MW if P<sub>peak</sub> < 1M
 
 C<sub>HSink</sub>(P) = P<sub>peak</sub> * 100,000€/MW else.
 
-The cost of the pump follows
+The costs of the pump follow
 
 C<sub>Pump</sub>(P) = P<sub>peak</sub> * 240,000€/MW if P<sub>peak</sub> < 1MW or
 
 C<sub>Pump</sub>(P) = P<sub>peak</sub> * 90,000€/MW else.
 
+#### Removal of transmission lines
 
-
-
+With a cost to flow threshold for transmission lines they can be deleted if exceeding it to improve the flow to cost ratio. After the removal of edges, the flow must be recomputed since the continuity of flow in the graph is not guaranteed anymore. The cost to flow ratio might also increase in other edges now, so this process is repeated until the sum of all flows does not change anymore.
 
 #### Description of the complete routine
 
-First the heat sources and sinks are loaded with their load profiles. Then the fixed radius search is performed, and the Network initialized. Afterwards the Network is reduced to its minimum spanning tree and the maximum flow is computed for every hour of the year. Based on the flow the costs for every heat exchanger and transmission line is computed.
+First the heat sources and sinks are loaded with their load profiles. Then the fixed radius search is performed, and the Network initialized. Afterwards the Network is reduced to its minimum spanning tree and the maximum flow is computed for every hour of the year. Based on the flow the costs for every heat exchanger, pump and transmission line is computed. If a threshold cost to flow ratio is defined the removal of transmission line procedure is executed. In the end the total cost and total flow of the network and the layout of the network is returned.
