@@ -155,7 +155,7 @@ C<sub>Pump</sub>(P) = P<sub>peak</sub> * 90,000€/MW else.
 
 #### Removal of transmission lines
 
-With a cost to flow threshold for transmission lines they can be deleted if exceeding it to improve the flow to cost ratio. After the removal of edges, the flow must be recomputed since the continuity of flow in the graph is not guaranteed anymore. The cost to flow ratio might also increase in other edges now, so this process is repeated until the sum of all flows does not change anymore.
+With a cost to flow threshold for transmission lines they can be removed if exceeding it to improve the flow to cost ratio. After the removal of edges, the flow must be recomputed since the continuity of flow in the graph is not guaranteed anymore. The cost to flow ratio might also increase for other edges now, so this process is repeated until the sum of all flows does not change anymore.
 
 #### Description of the complete routine
 
