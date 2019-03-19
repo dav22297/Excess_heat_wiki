@@ -99,10 +99,21 @@ The heat sources are taken from the industrial database. Based on their excess h
 
 #### Heat sinks
 
-The heat sinks are based on coherent areas with a known heat demand. The coherent areas form a mask for a grid on which equidistial points are placed as entry points. 
+The heat sinks are based on coherent areas with a known heat demand. The coherent areas form a mask for a grid on which equidistial points are placed as entry points. Depending on the selected Nuts2 ID a residential heating profile is assigned to the sinks.
 
 <figure>
   <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/coherent_aera_entry_points.svg" alt=""/>
   <figcaption><i>Example of a coherent aera and its generated entry points.</i></figcaption>
 </figure>
 
+#### Load profiles
+
+The mentioned load profiles consist of 8760 points which represent the load for every hour of the 365 days. Further information about the profiles can be found here and here.
+
+#### Computation of costs
+
+Since district heating systems have a large heat capacity a peak in flow does not mean the transmission lines actually need to deliver that short spike of heat instantaneously. Therefore the required capacity of the transmission lines and heat exchangers are determined by the averaged peak load. Specifically the numpy convolution function is used to average the flow over the last three hours by convoluting with a constant function. Depending on this value a transmission line from the following table is choosen. 
+
+#### Description of the complete routine
+
+First the heat sources and sinks are loaded with their load profiles. Then the fixed radius search is performed and the Network initialized. Afterwards the Network is reduced to its minimum spanning tree and the maximum flow is computed for every hour of the year. Based on the flow the costs for every heat exchanger and transmission line is computed.
