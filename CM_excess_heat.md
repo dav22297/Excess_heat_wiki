@@ -133,9 +133,16 @@ Since district heating systems have a large heat capacity a peak in flow does no
 | 190           | 976           | <150 |
 | >190          | 976           | <150 |
 
-The costs of the heat exchanger on the source side which is assumed as an air to liquid with integrated pump are computed with
+The costs of the heat exchanger on the source side which is assumed as air to liquid is computed with
 
-C<sub>HSource</sub>(P) = P<sub>peak</sub> * 15000€/MW
+C<sub>HSource</sub>(P) = P<sub>peak</sub> * 15000€/MW.
+
+The costs of the liquid to liquid heat exchanger on the sink side is determined with
+
+C<sub>HSink</sub>(P) = P<sub>peak</sub> * 265000€/MW if P<sub>peak</sub> < 1MW C<sub>HSink</sub>(P) = P<sub>peak</sub> * 100000€/MW else.
+
+
+
 
 #### Description of the complete routine
 
