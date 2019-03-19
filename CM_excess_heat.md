@@ -6,7 +6,7 @@
 ## Introduction
 The use of excess heat for district heating.
 
-## Input and outputs
+## Inputs and outputs
 
 ## Method
 ### Overview
@@ -112,7 +112,7 @@ The heat sinks are based on coherent areas with a known heat demand. The coheren
 
 #### Load profiles
 
-The mentioned load profiles consist of 8760 points which represent the load for every hour of the 365 days. Further information about the profiles can be found here and here.
+The mentioned load profiles consist of 8760 points which represent the load for every hour of the 365 days. Further information about the **[load profiles can be found here](https://gitlab.com/hotmaps/load_profile)**
 
 #### Computation of costs
 
