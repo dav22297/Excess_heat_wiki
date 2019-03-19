@@ -140,6 +140,7 @@ C<sub>HSource</sub>(P) = P<sub>peak</sub> * 15000€/MW.
 The costs of the liquid to liquid heat exchanger on the sink side is determined with
 
 C<sub>HSink</sub>(P) = P<sub>peak</sub> * 265000€/MW if P<sub>peak</sub> < 1MW 
+
 C<sub>HSink</sub>(P) = P<sub>peak</sub> * 100000€/MW else.
 
 
