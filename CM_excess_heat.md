@@ -99,11 +99,11 @@ The implementation of the igraph maximum flow function uses the Push-relabel alg
 
 #### Heat sources
 
-The heat sources are taken from the industrial database. Based on their excess heat, Nuts0 ID and industrial sector a load profile covering every hour of the year is created for each site.
+The heat sources are taken from the **[industrial database.]( https://gitlab.com/hotmaps/industrial_sites/industrial_sites_Industrial_Database)**. Based on their excess heat, Nuts0 ID and industrial sector a load profile covering every hour of the year is created for each site. The custom addition of sites is planned.
 
 #### Heat sinks
 
-The heat sinks are based on coherent areas with a known heat demand. The coherent areas form a mask for a grid on which equidistant points are placed as entry points. Depending on the selected Nuts2 ID a residential heating profile is assigned to the sinks.
+The heat sinks are based on coherent areas with a known heat demand. The coherent areas form a mask for a grid on which equidistant points are placed as entry points. Depending on the selected Nuts2 ID a residential heating profile is assigned to the sinks. The custom addition of entry points and sinks is planned.
 
 <figure>
   <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/coherent_aera_entry_points.svg" alt=""/>
