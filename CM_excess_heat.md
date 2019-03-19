@@ -135,7 +135,7 @@ Since district heating systems have a large heat capacity a peak in flow does no
 
 The costs of the heat exchanger on the source side which is assumed as an air to liquid with integrated pump are computed with
 
-C<sub>HSource</sub>(P) = &P<sub>peak</sub> * &15000€/MW
+C<sub>HSource</sub>(P) = P<sub>peak</sub> * 15000€/MW
 
 #### Description of the complete routine
 
