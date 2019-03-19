@@ -117,9 +117,9 @@ Since district heating systems have a large heat capacity a peak in flow does no
 
 | Power in MWh  | Costs in €/m  | Temperature in °C  |
 | ------------- |:-------------:| -----:|
-| 0.2           | 195           | >150 |
-| 0.3           | 206           | >150 |
-| 0.6           | 220           | >150 |
+| 0.2           | 195           | <150 |
+| 0.3           | 206           | <150 |
+| 0.6           | 220           | <150 |
 
 #### Description of the complete routine
 
