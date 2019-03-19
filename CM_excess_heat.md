@@ -99,7 +99,7 @@ The implementation of the igraph maximum flow function uses the Push-relabel alg
 
 #### Heat sources
 
-The heat sources are taken from the **[industrial database.]( https://gitlab.com/hotmaps/industrial_sites/industrial_sites_Industrial_Database)**. Based on their excess heat, Nuts0 ID and industrial sector a load profile covering every hour of the year is created for each site. The custom addition of sites is planned.
+The heat sources are taken from the **[industrial database.]( https://gitlab.com/hotmaps/industrial_sites/industrial_sites_Industrial_Database)** Based on their excess heat, Nuts0 ID and industrial sector a load profile covering every hour of the year is created for each site. The custom addition of sites is planned.
 
 #### Heat sinks
 
@@ -160,3 +160,19 @@ With a cost to flow threshold for transmission lines they can be removed if exce
 #### Description of the complete routine
 
 First the heat sources and sinks are loaded with their load profiles. Then the fixed radius search is performed, and the Network initialized. Afterwards the Network is reduced to its minimum spanning tree and the maximum flow is computed for every hour of the year. Based on the flow the costs for every heat exchanger, pump and transmission line is computed. If a threshold cost to flow ratio is defined the removal of transmission line procedure is executed. In the end the total cost and total flow of the network and the layout of the network is returned.
+
+## License
+Copyright © 2016-2018: Ali Aydemir, David Schilling 
+
+Creative Commons Attribution 4.0 International License
+This work is licensed under a Creative Commons CC BY 4.0 International License.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+License-Text: https://spdx.org/licenses/CC-BY-4.0.html
+
+
+## Acknowledgement
+We would like to convey our deepest appreciation to the Horizon 2020 [Hotmaps Project](https://www.hotmaps-project.eu) (Grant Agreement number 723677), which provided the funding to carry out the present investigation.
+
+<code><ins>**[To Top](#table-of-contents)**</ins></code>
