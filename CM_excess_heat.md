@@ -113,7 +113,7 @@ The heat sinks are based on coherent areas with a known heat demand. The coheren
 #### Load profiles
 
 The mentioned load profiles consist of 8760 points which represent the load for every hour of the 365 days. Further information about the **[load profiles can be found here.](https://gitlab.com/hotmaps/load_profile)**
-< load profiles can be found here.]( href="https://gitlab.com/hotmaps/load_profile target="_blank">example</a>
+<a href="https://gitlab.com/hotmaps/load_profile target="_blank"> load profiles can be found here.(</a>
 
 #### Computation of costs
 
