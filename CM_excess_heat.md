@@ -163,9 +163,9 @@ First the heat sources and sinks are loaded with their load profiles. Then the f
 
 ##Authors
 
-Ali Aydemir <sup>*</sup>, David Schilling <sup>*</sup>
+Ali Aydemir \*, David Schilling \*
 
-<sup>*</sup> [Fraunhofer ISI](https://isi.fraunhofer.de/)
+\* [Fraunhofer ISI](https://isi.fraunhofer.de/)
 Fraunhofer ISI, Breslauer Str. 48, 
 76139 Karlsruhe
 
