@@ -115,7 +115,8 @@ The mentioned load profiles consist of 8760 points which represent the load for 
 Since district heating systems have a large heat capacity a peak in flow does not mean the transmission lines actually need to deliver that short spike of heat instantaneously. Therefore, the required capacities of the transmission lines and heat exchangers are determined by the averaged peak load. Specifically, the numpy convolution function is used to average the flow over the last three hours by convoluting with a constant function. Depending on this value a transmission line from the following table is chosen. 
 
 *Specific costs of transmission lines used*
-| Power in MW  | Costs in €/m  | Temperature in °C  |
+
+| Power in MW   | Costs in €/m  | Temperature in °C  |
 | ------------- |:-------------:| -----:|
 | 0.2           | 195           | <150 |
 | 0.3           | 206           | <150 |
@@ -131,6 +132,10 @@ Since district heating systems have a large heat capacity a peak in flow does no
 | 125           | 839           | <150 |
 | 190           | 976           | <150 |
 | >190          | 976           | <150 |
+
+The costs of the heat exchanger on the source side which is assumed as an air to liquid with integrated pump are computed with
+
+_C = P_peak * 15000€/MW
 
 #### Description of the complete routine
 
