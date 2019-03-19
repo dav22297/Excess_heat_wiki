@@ -99,5 +99,5 @@ The heat sources are taken from the industrial database. Based on their excess h
 
 #### Heat sinks
 
-Heat sinks are created by a
+The heat sinks are based on coherent areas with a known heat demand. The coherent areas form a mask for a grid on which equidistial points are placed as entry points. 
 
