@@ -101,3 +101,8 @@ The heat sources are taken from the industrial database. Based on their excess h
 
 The heat sinks are based on coherent areas with a known heat demand. The coherent areas form a mask for a grid on which equidistial points are placed as entry points. 
 
+<figure>
+  <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/coherent_aera_entry_points.svg" alt=""/>
+  <figcaption><i>Example of a coherent aera and its generated entry points.</i></figcaption>
+</figure>
+
