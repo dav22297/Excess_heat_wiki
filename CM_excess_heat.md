@@ -1,4 +1,4 @@
-## Table of Contents
+﻿## Table of Contents
 
 ## Introduction
 The use of excess heat for district heating.
@@ -112,7 +112,7 @@ The mentioned load profiles consist of 8760 points which represent the load for 
 
 #### Computation of costs
 
-Since district heating systems have a large heat capacity a peak in flow does not mean the transmission lines actually need to deliver that short spike of heat instantaneously. Therefore the required capacities of the transmission lines and heat exchangers are determined by the averaged peak load. Specifically the numpy convolution function is used to average the flow over the last three hours by convoluting with a constant function. Depending on this value a transmission line from the following table is choosen. 
+Since district heating systems have a large heat capacity a peak in flow does not mean the transmission lines actually need to deliver that short spike of heat instantaneously. Therefore, the required capacities of the transmission lines and heat exchangers are determined by the averaged peak load. Specifically, the numpy convolution function is used to average the flow over the last three hours by convoluting with a constant function. Depending on this value a transmission line from the following table is chosen. 
 
 
 | Power in MW  | Costs in €/m  | Temperature in °C  |
@@ -131,7 +131,8 @@ Since district heating systems have a large heat capacity a peak in flow does no
 | 125           | 839           | <150 |
 | 190           | 976           | <150 |
 | >190          | 976           | <150 |
+*Specific costs of transmission lines used*
 
 #### Description of the complete routine
 
-First the heat sources and sinks are loaded with their load profiles. Then the fixed radius search is performed and the Network initialized. Afterwards the Network is reduced to its minimum spanning tree and the maximum flow is computed for every hour of the year. Based on the flow the costs for every heat exchanger and transmission line is computed.
+First the heat sources and sinks are loaded with their load profiles. Then the fixed radius search is performed, and the Network initialized. Afterwards the Network is reduced to its minimum spanning tree and the maximum flow is computed for every hour of the year. Based on the flow the costs for every heat exchanger and transmission line is computed.
