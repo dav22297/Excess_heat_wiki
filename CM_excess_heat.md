@@ -162,7 +162,11 @@ With a cost to flow threshold for transmission lines they can be removed if exce
 First the heat sources and sinks are loaded with their load profiles. Then the fixed radius search is performed, and the Network initialized. Afterwards the Network is reduced to its minimum spanning tree and the maximum flow is computed for every hour of the year. Based on the flow the costs for every heat exchanger, pump and transmission line is computed. If a threshold cost to flow ratio is defined the removal of transmission line procedure is executed. In the end the total cost and total flow of the network and the layout of the network is returned.
 
 ## License
-Copyright © 2016-2018: Ali Aydemir, David Schilling 
+Copyright © 2016-2018: Ali Aydemir<sup>*</sup>, David Schilling <sup>*</sup>
+
+<sup>*</sup> [Fraunhofer ISI](https://isi.fraunhofer.de/)
+Fraunhofer ISI, Breslauer Str. 48, 
+76139 Karlsruhe
 
 Creative Commons Attribution 4.0 International License
 This work is licensed under a Creative Commons CC BY 4.0 International License.
