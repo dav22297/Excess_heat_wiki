@@ -1,6 +1,7 @@
 ﻿## Table of Contents
 * [Introduction](#introduction)
 * [Inputs and outputs](#inputs-and-outputs)
+* [Sample run](#sample-run)
 * [Method](#method)
 * [Authors and reviewers](#authors-and-reviewers)
 * [License](#license)
@@ -10,6 +11,19 @@
 The use of excess heat for district heating.
 
 ## Inputs and outputs
+
+###Input layers and parameters
+
+* District heating areas (for now directly provided by the district heating potential CM)
+* Industrial database (by default provided by the toolbox)
+* Serach radius in km
+* Investment period in years
+* Threshold value for transmission lines in ct/kWh
+
+###Output layers and indicators
+
+* Transmission lines
+* Total flow and costs and cost per flow
 
 ## Method
 ### Overview
@@ -163,6 +177,17 @@ With a cost to flow threshold for transmission lines they can be removed if exce
 #### Description of the complete routine
 
 First the heat sources and sinks are loaded with their load profiles. Then the fixed radius search is performed, and the Network initialized. Afterwards the Network is reduced to its minimum spanning tree and the maximum flow is computed for every hour of the year. Based on the flow the costs for every heat exchanger, pump and transmission line is computed. If a threshold cost to flow ratio is defined the removal of transmission line procedure is executed. In the end the total cost and total flow of the network and the layout of the network is returned.
+
+## Sample run
+
+Sample run in Aalborg.
+
+<figure>
+  <img src="https://github.com/dav22297/Excess_heat_wiki/blob/master/figures/aalborg.png" alt=""/>
+  <figcaption><i>Sample run in Aalborg. The blue aeras represent the district heating. The orange point the heat source and the yellow points the entry points to the district heating network.</i></figcaption>
+</figure>
+
+The total costs are 13.7 M€ and the total annual flow is 185GWh which results in 0.74ct/kWh for an investment period of 10 years.
 
 ## Authors and reviewers
 
