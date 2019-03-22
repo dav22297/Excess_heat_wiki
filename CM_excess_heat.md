@@ -1,8 +1,8 @@
 ﻿## Table of Contents
 * [Introduction](#introduction)
 * [Inputs and outputs](#inputs-and-outputs)
-* [Sample run](#sample-run)
 * [Method](#method)
+* [Sample run](#sample-run)
 * [Authors and reviewers](#authors-and-reviewers)
 * [License](#license)
 * [Acknowledgement](#acknowledgement)
@@ -12,7 +12,7 @@ The use of excess heat for district heating.
 
 ## Inputs and outputs
 
-###Input layers and parameters
+### Input layers and parameters
 
 * District heating areas (for now directly provided by the district heating potential CM)
 * Industrial database (by default provided by the toolbox)
@@ -20,7 +20,7 @@ The use of excess heat for district heating.
 * Investment period in years
 * Threshold value for transmission lines in ct/kWh
 
-###Output layers and indicators
+### Output layers and indicators
 
 * Transmission lines
 * Total flow and costs and cost per flow
@@ -187,7 +187,7 @@ Sample run in Aalborg.
   <figcaption><i>Sample run in Aalborg. The blue aeras represent the district heating. The orange point the heat source and the yellow points the entry points to the district heating network.</i></figcaption>
 </figure>
 
-The total costs are 13.7 M€ and the total annual flow is 185GWh which results in 0.74ct/kWh for an investment period of 10 years.
+The total costs are 13.7 M€ and the total annual flow is 185 GWh which results in 0.74 ct/kWh for an investment period of 10 years.
 
 ## Authors and reviewers
 
